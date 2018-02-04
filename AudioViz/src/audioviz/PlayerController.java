@@ -116,6 +116,7 @@ public class PlayerController implements Initializable {
                  double ms = timeSlider.getValue();
                  Duration seekTo = Duration.millis(ms);
                  mediaPlayer.seek(seekTo);
+                 currentText.setText(formatDuration(mediaPlayer.getCurrentTime()));
             }
         });
         
